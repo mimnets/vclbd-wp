@@ -36,7 +36,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><?php echo get_bloginfo('name') ?></a> <!-- Wordpress site name -->
+            <a class="navbar-brand" href="<?php echo esc_url(home_url())?>"><?php echo get_bloginfo('name') ?></a> <!-- Wordpress site name -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
