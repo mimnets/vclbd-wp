@@ -6,9 +6,9 @@
 
 <?php
 
-if(! isset($content_width){
+if(! isset($content_width)){
     $content_width = 660;
-})
+}
 
 function vclbdwp_setup(){
     add_theme_support('automatic-feed-links');

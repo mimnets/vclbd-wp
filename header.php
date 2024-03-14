@@ -1,9 +1,17 @@
+<?php
+/*
+* The header for our theme
+*/
+?>
+
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
   <head>
-    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta charset="<?php bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VCLBD | Versatile Creation Ltd.</title>
+
+    <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom Fonts-->
@@ -16,12 +24,19 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+
+    <!-- <title>VCLBD | Versatile Creation Ltd.</title> -->
+
+    <?php wp_head(); ?> <!-- Header -->
+
   </head>
-  <body>
+
+
+  <body <?php body_class(); ?>> <!-- Adding custom css class with an array array('custom','custom2') -->
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">VCLBD</a>
+            <a class="navbar-brand" href="index.php"><?php echo get_bloginfo('name') ?></a> <!-- Wordpress site name -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
