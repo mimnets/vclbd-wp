@@ -1,4 +1,8 @@
-<!--Footer Section-->
+<?php 
+/*
+* The template for display the footer
+*/
+?>
 <footer class="container-fluid py-5">
             <div class="row">
                 <div class="col-sm-4">
@@ -41,5 +45,7 @@
         </footer>
     <!-- JS -->
     <script src="js/bootstrap.min.js"></script>
+    <?php wp_footer(); ?>
   </body>
+
 </html>
